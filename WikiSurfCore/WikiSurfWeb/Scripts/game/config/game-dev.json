@@ -1,0 +1,5 @@
+{
+  "mode": "development",
+  "height": 600, //default
+  "width": 0 //default
+}

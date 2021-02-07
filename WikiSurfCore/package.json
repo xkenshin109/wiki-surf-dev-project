@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "lodash": "^4.17.20",
+    "path": "^0.12.7",
+    "pixi.js": "^5.3.7"
+  },
+  "name": "wiki-surf-dev-project",
+  "version": "1.0.0",
+  "description": "WikiSurf",
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bundledDependencies": [],
+  "bundleDependencies": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xkenshin109/wiki-surf-dev-project.git"
+  }
+}

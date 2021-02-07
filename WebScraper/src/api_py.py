@@ -1,28 +1,32 @@
-'''
-Created on Jan 30, 2021
+#!/usr/bin/env python
+import pika, sys, os
+import json
+import run
+from pika.spec import BasicProperties
+def main():
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+    channel = connection.channel()
 
-@author: Jeremy
-'''
-import socket
+    channel.queue_declare(queue='wiki_surf_dev')
 
-def make_request(url):
-    print('User requesting HTML: ' + url)
-    HOST = url
-    PORT = 80
-    
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = (HOST, PORT)
-    client_socket.connect(server_address)
-    
-    request_header = b'GET / HTTP/1.0\r\nHost: www.google.com\r\n\r\n'
-    client_socket.sendall(request_header)
-    
-    response = ''
-    while True:
-        recv = client_socket.recv(1024)
-        if not recv:
-            break
-        response += str(recv)
-    print('response: %s' % response)
-    client_socket.close()
-    return response
+    def callback(ch, method, properties, body):
+        test = body.decode()
+        test = json.loads(test)
+        print(" [x] Received WordBankId: %s WordBankQueueId: %s" % (test.get("WordBankId"), test.get("WordBankQueueId")))        
+        run.WikiProcess().run(test)
+        p = pika.BasicProperties(correlation_id=properties.correlation_id)
+        channel.basic_publish(exchange = "", routing_key = properties.reply_to,properties = p ,body = str("received"))
+    channel.basic_consume(queue='wiki_surf_dev', on_message_callback=callback, auto_ack=True)
+
+    print(' [*] Waiting for messages. To exit press CTRL+C')
+    channel.start_consuming()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print('Interrupted')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
