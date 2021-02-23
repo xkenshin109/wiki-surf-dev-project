@@ -81,9 +81,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\WikiException.cs" />
     <Compile Include="Migrations\202102060113471_init.cs" />
     <Compile Include="Migrations\202102060113471_init.designer.cs">
       <DependentUpon>202102060113471_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102130139038_excludeword_propertyadded.cs" />
+    <Compile Include="Migrations\202102130139038_excludeword_propertyadded.designer.cs">
+      <DependentUpon>202102130139038_excludeword_propertyadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102130218386_wikisession_added.cs" />
+    <Compile Include="Migrations\202102130218386_wikisession_added.designer.cs">
+      <DependentUpon>202102130218386_wikisession_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102210146451_wordAssociationXrefTableAdded.cs" />
+    <Compile Include="Migrations\202102210146451_wordAssociationXrefTableAdded.designer.cs">
+      <DependentUpon>202102210146451_wordAssociationXrefTableAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102220223082_currentWordProperty.cs" />
+    <Compile Include="Migrations\202102220223082_currentWordProperty.designer.cs">
+      <DependentUpon>202102220223082_currentWordProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -109,6 +126,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102060113471_init.resx">
       <DependentUpon>202102060113471_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102130139038_excludeword_propertyadded.resx">
+      <DependentUpon>202102130139038_excludeword_propertyadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102130218386_wikisession_added.resx">
+      <DependentUpon>202102130218386_wikisession_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102210146451_wordAssociationXrefTableAdded.resx">
+      <DependentUpon>202102210146451_wordAssociationXrefTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102220223082_currentWordProperty.resx">
+      <DependentUpon>202102220223082_currentWordProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

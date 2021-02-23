@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WikiSurfModel.Utils;
 
 namespace WikiSurfModel
 {
@@ -22,5 +23,22 @@ namespace WikiSurfModel
         public string Additional { get; set; }
         [DefaultValue("getutcdate()")]
         public DateTime ImportDate { get; set; }
+        [NotMapped]
+        public string WordHtmlEncoded{
+            get
+            {
+                return HtmlUtils.HtmlDecode(Additional);
+            }
+
+        }
+
+        [NotMapped]
+        public string WordHtmlDecoded
+        {
+            get
+            {
+                return HtmlUtils.HtmlDecode(WordHtmlEncoded);
+            }
+        }
     }
 }

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.js" line="18" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39b7c15c-5c1d-436b-af04-62d97b1b22dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Jeremy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/wiki-surf-application-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/routes/SessionApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/routes/gameEngineApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/api/utils/gameEngineApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/deploy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/cards/wiki-link-button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu-navigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/wiki-game-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/gameEngine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/sessionTodo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/screen_constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/utils/wiki-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebScraper/src/api_py.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScraper/src/api_py.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebScraper/src/python_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScraper/src/python_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebScraper/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScraper/src/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebScraper/wikimodels/wordBankQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScraper/wikimodels/wordBankQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_LINK.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_LINK.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_PAGE.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_PAGE.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_SECTION.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_INSERT_WIKI_SECTION.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_WORD_BANK_QUEUE_COMPLETE.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/Database/Stored Procedures/S_WORD_BANK_QUEUE_COMPLETE.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiProcess/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiProcess/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/RabbitMQ/RabbitHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/RabbitMQ/RabbitHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/Repositories/IWikiSurfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/Repositories/IWikiSurfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/Repositories/WikiSurfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/Repositories/WikiSurfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/WikiSurfContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/WikiSurfContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/WikiSurfCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfCore/WikiSurfCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiLinks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiLinks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiPage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiSections.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiSections.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiSurfModel.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WikiSurfModel.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WordBank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfModel/WordBank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/App_Start/BundleConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/App_Start/BundleConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/controls/wiki-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/controls/wiki-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/models/WikiSurfApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/models/WikiSurfApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/views/MainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Scripts/game/views/MainMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/WikiSurfWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/WikiSurfWeb/WikiSurfWeb.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WikiSurfCore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WikiSurfCore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wiki-surf-react/deploy.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Vue Single File Component" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>preflightContinue</find>
+      <find>length</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wiki-surf/src/components/game-page/game-page.html" />
+        <option value="$PROJECT_DIR$/wiki-surf/src/components/game-page/game-pagew.vue" />
+        <option value="$PROJECT_DIR$/wiki-surf/src/components/game-page/game-page.vue" />
+        <option value="$PROJECT_DIR$/wiki-surf/src/main.js" />
+        <option value="$PROJECT_DIR$/wiki-surf/src/App.vue" />
+        <option value="$PROJECT_DIR$/wiki-surf/src/components/game-page/game-page.js" />
+        <option value="$PROJECT_DIR$/wiki-surf/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/routes/SessionApi.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/routes/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/bin/www" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/config/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/store.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/page-text.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/page-link.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.css" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/store.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/constants.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/base/ElevationScroll.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/base/elevation-scroll.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/routes/users.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/index.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/config/config.json" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/app.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/package.json" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/routes/gameEngineApi.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actionTypes.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actions.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/wiki-game-page.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/api/utils/gameEngineApi.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/sessionTodo.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/utils/wiki-api.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu-navigator.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/cards/wiki-link-button.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/gameEngine.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/selectors.js" />
+        <option value="$PROJECT_DIR$/wiki-surf-react/deploy.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="707" />
+    <option name="y" value="-12" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wiki-surf-application-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wiki-surf-application-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wiki-surf-application-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wiki-surf-application-client" type="462c0819:PsiDirectoryNode" />
+              <item name="wiki-surf-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wiki-surf-react/api/index.js" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="C:\Users\Jeremy\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\191.6183.63\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Eclips projects\wiki-surf-dev-project\wiki-surf-application-client" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration name="app.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" node-parameters="./bin/www" path-to-js-file="wiki-surf-react/api/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/wiki-surf-react/api">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/wiki-surf-react/api/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/wiki-surf-react/api/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="npm.start" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39b7c15c-5c1d-436b-af04-62d97b1b22dc" name="Default Changelist" comment="" />
+      <created>1613086803603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613086803603</updated>
+      <workItem from="1613086804718" duration="23753000" />
+      <workItem from="1613235131137" duration="59298000" />
+      <workItem from="1613700153561" duration="79396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="162447000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" weight="0.32998884" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4926238" weight="0.3857302" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32998884" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49894625" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49051633" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5073762" side_tool="true" weight="0.3857302" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Remote Host" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>cookieParser({
+       &quot;cookiename&quot;: &quot;sessionCookie&quot;,
+       &quot;expires&quot;:&quot;0&quot;,
+       &quot;path&quot;:&quot;/&quot;
+     });</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookieParser.JSONCookie({
+       &quot;cookiename&quot;: &quot;sessionCookie&quot;,
+       &quot;expires&quot;:&quot;0&quot;,
+       &quot;path&quot;:&quot;/&quot;
+     });</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>cookieParser.JSONCookie(rr)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookieParser(self.api['wikiapi'].cookieSecret)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookieParser.JSONCookies(rr)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.cookies</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rr</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookieParser.signedCookie(rr,self.api['wikiapi'].cookieSecret)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookieParser</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.api['wikiapi'].cookieSecret</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.api['wikiapi']</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.api</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/node_modules/axios/lib/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/node_modules/axios/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/reportWebVitals.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/routes/pageApi" />
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="22" lean-forward="true" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/node_modules/express/lib/router/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1671">
+          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/node_modules/axios/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/node_modules/axios/lib/core/createError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/node_modules/react-native-a/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/page-text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/node_modules/cors/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/page-link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" selection-start-line="21" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/screen_constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/cards/elevation-scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/wiki-game-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/routes/gameEngineApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/routes/SessionApi.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/cards/wiki-link-button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/gameEngine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/api/utils/gameEngineApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/sessionTodo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="65" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/redux/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/utils/wiki-api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/wiki-surf/src/components/menu-navigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki-surf-react/deploy.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

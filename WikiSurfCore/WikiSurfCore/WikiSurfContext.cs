@@ -20,10 +20,21 @@ namespace WikiSurfCore
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //modelBuilder
-            //    .Entity<WordBank>()
-            //    .HasRequired(x => x.WikiPage)
-            //    .WithRequiredDependent(x => x.WordBank);
+
+            modelBuilder.Entity<WikiSessionWordBank>()
+                .HasRequired<WikiSession>(s => s.WikiSession)
+                .WithMany(g => g.WikiSessionWordBanks)
+                .HasForeignKey<Guid>(s => s.WikiSessionId);
+
+            modelBuilder.Entity<WordBankQueue>()
+                .HasRequired<WordBank>(x => x.WordBank)
+                .WithMany(g => g.WordBankQueues)
+                .HasForeignKey<Guid>(s => s.WordBankId);
+
+            modelBuilder.Entity<WordBankXref>()
+                .HasRequired<WordBank>(s => s.WordBank)
+                .WithMany(g => g.WordBankXrefs)
+                .HasForeignKey<Guid>(s => s.WordBankId);
 
             var convention = new AttributeToColumnAnnotationConvention<DefaultValueAttribute, string>("SqlDefaultValue", (p, attributes) => attributes.SingleOrDefault().Value.ToString());
             modelBuilder.Conventions.Add(convention);
@@ -36,5 +47,7 @@ namespace WikiSurfCore
         public virtual DbSet<WikiProperties> WikiProperties { get; set; }
         public virtual DbSet<WikiSections> WikiSections { get; set; }
         public virtual DbSet<WikiCategories> WikiCategories { get; set; }
+        public virtual DbSet<WikiSession> WikiSessions { get; set; }
+        public virtual DbSet<WikiSessionWordBank> WikiSessionWordBanks { get; set; }
     }
 }

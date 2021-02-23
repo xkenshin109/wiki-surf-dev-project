@@ -1,15 +1,19 @@
-﻿function WikiSurfApp(app) {
+﻿var wikiApi = require('../routes/wiki-api');
+var wikiControls = require('../controls/wiki-controls');
+
+function WikiSurfApp(app) {
     var self = this;
-    self.app = app;
+    self.appView = app;
     $.getJSON('Scripts/game/config/game-dev.json', function (json) {
         self.config = json;
     });
     self.wordBank = [];
+    self.wikiControls = wikiControls.wikiControls(app, self);
 };
 
 WikiSurfApp.prototype.startGameloop = function () {
     var self = this;
-    let defaultView = 'MainMenu';
+    var defaultView = 'MainMenu';
     //const container = new PIXI.Container();
 
     //self.app.stage.addChild(container);
@@ -30,7 +34,7 @@ WikiSurfApp.prototype.startGameloop = function () {
     //// Center bunny sprite in local container coordinates
     //container.pivot.x = container.width / 2;
     //container.pivot.y = container.height / 2;
-    let mainMenu = new MainMenu(self.app, self);
+    var mainMenu = new MainMenu(self.appView, self);
     mainMenu.loadScreen();
     // Listen for animate update
     self.app.ticker.add((delta) => {
@@ -42,8 +46,12 @@ WikiSurfApp.prototype.startGameloop = function () {
 
 //called when navigating screens. Placed here as placeholder 
 WikiSurfApp.prototype.clearCanvas = function () {
-    let self = this;
+    var self = this;
     for (var i = self.app.stage.children.length - 1; i >= 0; i--) {
         self.app.stage.removeChild(self.app.stage.children[i]);
     }
 };
+
+WikiSurfApp.prototype.addControlToAppView = function(control) {
+
+}

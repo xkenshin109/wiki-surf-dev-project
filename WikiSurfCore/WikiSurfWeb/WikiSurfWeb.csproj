@@ -166,12 +166,17 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\dep\lodash.js" />
+    <Content Include="Scripts\dep\requirejs.js" />
     <Content Include="Scripts\game\config\game-dev.json" />
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\dep\async.js" />
     <Content Include="Scripts\game\controls\wiki-button.js" />
+    <Content Include="Scripts\game\controls\wiki-controls.js" />
+    <Content Include="Scripts\game\controls\wiki-text.js" />
     <Content Include="Scripts\game\main.js" />
     <Content Include="Scripts\game\models\WikiSurfApp.js" />
+    <Content Include="Scripts\game\routes\wiki-api.js" />
     <Content Include="Scripts\game\views\LoadingScreen.js" />
     <Content Include="Scripts\game\views\MainMenu.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

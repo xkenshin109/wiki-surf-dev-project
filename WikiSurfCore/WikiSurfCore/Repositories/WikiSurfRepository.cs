@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using WikiSurfModel;
 using WikiSurfCore.RabbitMQ;
+using WikiSurfModel.StoredProcedures;
 
 namespace WikiSurfCore.Repositories
 {
@@ -16,47 +20,65 @@ namespace WikiSurfCore.Repositories
             _dbContext = dbContext;
         }
 
-        public List<WordBank> GetRandomWords(int count = 2)
+        public WikiSession GetNewSession()
         {
-            var r = new Random();
-            var iMin = (int)_dbContext.WordBanks.Min(x => x.WordIndex);
-            var iMax = (int)_dbContext.WordBanks.Max(x => x.WordIndex);
-            var firstIndex = r.Next(iMin, iMax);
-            var lastIndex = r.Next(iMin, iMax);
-            var test = _dbContext.WordBanks
-                .Where(x => x.WordIndex == firstIndex || x.WordIndex == lastIndex);
-            AddWordsToQueue(test.ToList());
-            
-            return test.ToList();
+            var newSession = new WikiSession
+            {
+                PlayerName = "Test",
+                CreatedDate = DateTime.Now,
+                UpdateDateTime = DateTime.Now,
+                IsActive = true
+            };
+            _dbContext.WikiSessions.Add(newSession);
+            _dbContext.SaveChanges();
+            return newSession;
+        }
+        public List<WordBank> GetRandomWords(WikiSession aWikiSession, int count = 2)
+        {
+            var test = GetNewWords(aWikiSession);
+            //var test = _dbContext.WordBanks
+            //    //.Where(x => x.WordIndex == firstIndex || x.WordIndex == lastIndex)
+            //    //.ToList()
+            //    .Where(x => x.Word == "Endotherium" || x.Word == "Academy of Allied Health & Science")
+            //    .ToList();
+
+            _dbContext.Entry(aWikiSession).State = EntityState.Modified;
+            _dbContext.SaveChanges();
+            return AddWordsToQueue(test.ToList(), aWikiSession);
         }
 
-        public void AddWordsToQueue(List<WordBank> words)
+        public List<WordBank> AddWordsToQueue(List<WordBank> words, WikiSession aSession)
         {
-            
             for (var i = 0; i < words.Count(); i++)
             {
                 var wbId = words[i].WordBankId;
                 var cached = _dbContext.WikiPages.FirstOrDefault(x => x.WordBankId == wbId);
                 if (cached != null) continue;
+                var wordBank = _dbContext.WordBanks.FirstOrDefault(x => x.WordBankId == wbId);
                 var wbq = new WordBankQueue
                 {
                     CreatedDate = DateTime.Now,
                     IsProcessed = false,
-                    WordBank = words[i]
+                    WordBankId = wbId,
+                    WordBank = wordBank
                 };
+                
                 _dbContext.WordBankQueues.Add(wbq);
                 _dbContext.SaveChanges();
-                RabbitHelper.Send(wbq); //Send items to RabbitMQ for processing
                 _dbContext.Entry(wbq).Reload();
-
+                
+                wbq = RabbitHelper.Send(wbq, aSession); //Send items to RabbitMQ for processing
+                
+                words[i] = wbq.WordBank;
+                words[i].WordBankQueues.Add(wbq);
             }
-           
-            
+
+            return words;
         }
 
-        public void AddWordToQueue(WordBank word)
+        public void AddWordToQueue(WordBank word, WikiSession aWikiSession)
         {
-            this.AddWordsToQueue(new List<WordBank>(){word});
+            this.AddWordsToQueue(new List<WordBank>(){word}, aWikiSession);
         }
         public WikiPage GetWikiPage(WordBank a_wordBank)
         {
@@ -64,7 +86,7 @@ namespace WikiSurfCore.Repositories
             return wikiPage;
         }
 
-        public WikiPage GetWikiPage(Guid aWikiLinkId, string aWord)
+        public WikiPage GetWikiPage(Guid aWikiLinkId, string aWord, WikiSession aWikiSession)
         {
             var wikiLink =
                 _dbContext.WikiLinks.FirstOrDefault((x => x.WikiLinksId == aWikiLinkId && x.Additional == aWord));
@@ -74,9 +96,45 @@ namespace WikiSurfCore.Repositories
             }
 
             var wordBank = _dbContext.WordBanks.FirstOrDefault(x => x.Word == aWord);
-            AddWordToQueue(wordBank);
+            AddWordToQueue(wordBank, aWikiSession);
             var wikiPage = _dbContext.WikiPages.FirstOrDefault(x => x.WordBankId == wordBank.WordBankId);
+            aWikiSession.CurrentWordBankId = wordBank.WordBankId;
+            _dbContext.Entry(aWikiSession).State = EntityState.Modified;
+            _dbContext.SaveChanges();
             return wikiPage;
+        }
+
+        public List<WordBank> GetNewWords(WikiSession session)
+        {
+            var sessionIdParamter = new SqlParameter("@WikiSessionId",session.WikiSessionId);
+            var result = _dbContext
+                .Database
+                .SqlQuery<S_New_Game_Words>("EXEC S_NEW_GAME_WORDS @WikiSessionId", sessionIdParamter)
+                .ToList();
+            var res = new List<WordBank>();
+            foreach(var a in result)
+            {
+                res.Add(a.WordBank());
+            }
+            return res;
+        }
+
+        public WikiSession GetExistingSession(Guid aSessionId)
+        {
+
+            var session = _dbContext.WikiSessions.FirstOrDefault(x => x.WikiSessionId == aSessionId);
+
+            return session;
+        }
+
+        public WikiSession IncreaseClick(WikiSession session)
+        {
+            var dbEntry = _dbContext.WikiSessions.First(s=>s.WikiSessionId == session.WikiSessionId);
+            dbEntry.TotalClicks += 1;
+            _dbContext.Entry(dbEntry).State = EntityState.Modified;
+            _dbContext.SaveChanges();
+
+            return dbEntry;
         }
     }
 }

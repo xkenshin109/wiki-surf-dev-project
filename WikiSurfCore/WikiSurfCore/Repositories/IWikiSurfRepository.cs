@@ -9,12 +9,20 @@ namespace WikiSurfCore.Repositories
 {
     public interface IWikiSurfRepository
     {
-        List<WordBank> GetRandomWords(int count = 2);
+        WikiSession GetNewSession();
 
-        void AddWordsToQueue(List<WordBank> words);
+        List<WordBank> GetRandomWords(WikiSession aWikiSession, int count = 2);
+
+        List<WordBank> AddWordsToQueue(List<WordBank> words, WikiSession aWikiSession);
 
         WikiPage GetWikiPage(WordBank a_wordBank);
 
-        WikiPage GetWikiPage(Guid aWikiLinkId, string aWord);
+        WikiPage GetWikiPage(Guid aWikiLinkId, string aWord, WikiSession aWikiSession);
+
+        List<WordBank> GetNewWords(WikiSession session);
+
+        WikiSession GetExistingSession(Guid aSessionId);
+
+        WikiSession IncreaseClick(WikiSession session);
     }
 }

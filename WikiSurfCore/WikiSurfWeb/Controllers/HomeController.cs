@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WikiSurfCore.Repositories;
+using WikiSurfModel;
+
 namespace WikiSurfWeb.Controllers
 {
     public class HomeController : Controller
@@ -21,25 +23,26 @@ namespace WikiSurfWeb.Controllers
         }
         public ActionResult GetStartingWords()
         {
-            var words = _wikiSurfRepository.GetRandomWords();
-            var wikiPages = _wikiSurfRepository.GetWikiPage(words.First());
-            var content = wikiPages.HtlmFormatted;
+            //var words = _wikiSurfRepository.GetRandomWords();
+            //var wikiPages = _wikiSurfRepository.GetWikiPage(words.First());
+            //var content = wikiPages.HtlmFormatted;
             return Json(
                 new
                 {
-                    currentPage = content,
-                    startingWords = words
-                }
-                , 
+                    //currentPage = content,
+                    //startingWord = words[0],
+                    //endingWord = words[1]
+                }, 
                 JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult UserClicked(string word, Guid wikiLinkId)
+        public ActionResult UserClicked(string word, Guid wikiLinkId, WikiSession aSessionId)
         {
-            var res = _wikiSurfRepository.GetWikiPage(wikiLinkId, word);
+            var res = _wikiSurfRepository.GetWikiPage(wikiLinkId, word, aSessionId);
             return Json(new
             {
-                currentPage = res.HtlmFormatted
+                currentPage = res.HtlmFormatted,
+                title = res.Title
             }, JsonRequestBehavior.AllowGet);
         }
     }

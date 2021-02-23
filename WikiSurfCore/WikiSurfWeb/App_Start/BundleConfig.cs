@@ -31,6 +31,11 @@ namespace WikiSurfWeb
                 "~/Scripts/dep/",
                 "*.js"));
 
+            //Dependencies
+            bundles.Add(new ScriptBundle("~/bundles/routes").IncludeDirectory(
+                "~/Scripts/game/routes/",
+                "*.js"));
+
             //Controls Scripts
             bundles.Add(new ScriptBundle("~/bundles/controls").IncludeDirectory(
                 "~/Scripts/game/controls/",

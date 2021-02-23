@@ -38,21 +38,19 @@ namespace WikiSurfModel
             Links = new List<WikiLinks>();
             Sections = new List<WikiSections>();
             Properties = new List<WikiProperties>();
+            _htlmFormatted = String.Empty;
         }
         [NotMapped]
         public string HtlmFormatted { get
             {
-                if (string.IsNullOrEmpty(_htlmFormatted))
+                _htlmFormatted = PlainTextContent;
+                foreach (WikiLinks link in Links)
                 {
-                    _htlmFormatted = PlainTextContent;
-                    foreach (WikiLinks link in Links)
+                    if (_htlmFormatted.Contains((link.Additional)))
                     {
-                        if (_htlmFormatted.Contains((link.Additional)))
-                        {
-                            _htlmFormatted = _htlmFormatted.Replace(link.Additional, $"<a href=\"javascript:userClicked('{link.Additional}','{link.WikiLinksId}')\"><span>{HtmlUtils.HtmlEncode(link.Additional)}</span></a>");
-                        }
-                        
+                        _htlmFormatted = _htlmFormatted.Replace(link.Additional, $"<a href ='javascript:void(0)' onClick={{self.getNewWords}} id='{link.WikiLinksId}' name='{HtmlUtils.HtmlEncode(link.Additional)}'><span>{HtmlUtils.HtmlEncode(link.Additional)}</span></a>");
                     }
+
                 }
 
                 return _htlmFormatted;

@@ -11,8 +11,6 @@ namespace WikiSurfModel
 {
     public class WikiSections
     {
-        [NotMapped]
-        private DateTime _importDate;
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid WikiSectionsId { get; set; }

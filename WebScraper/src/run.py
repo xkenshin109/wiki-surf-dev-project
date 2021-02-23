@@ -19,7 +19,7 @@ class WikiProcess:
     def getServer(self):
         return self.config.get("server")
     
-    def run(self,queueItem):
+    def run(self,queueItem, sessionId):
         """
             Workflow to retrieving Wiki Data from API
             1) While Loop(Continuous)
@@ -27,7 +27,19 @@ class WikiProcess:
                 - If records exists; perform API calls and map results to models
                 - Save Model to DB
         """
-        self.getPageDetails(wordBankQueue.WordBankQueue(queueItem))        
+        try:
+            if(isinstance(queueItem,wordBankQueue.WordBankQueue)):
+                self.queuedItem = queueItem
+            else:
+                self.queuedItem = wordBankQueue.WordBankQueue(queueItem)
+            self.queuedItem.setSession(sessionId)
+            self.getPageDetails(self.queuedItem)        
+        except:
+            self.queuedItem.cancelWord(self.getServer(), self.getDatabase(), sessionId)
+            print(" [-] Word has been cancelled")
+            print(" [x] New Word WordBankId: %s WordBankQueueId: %s" % (self.queuedItem.wordBankId, self.queuedItem.wordBankQueueId))          
+            self.run(self.queuedItem, sessionId)
+        return self.queuedItem.getJsonObject()
     def getItemsFromWordQueue(self):
         res = python_sql.sqlConnect(self.getServer(),self.getDatabase())
         return res.retrieveDataset(wordBankQueue.WordBankQueue.getItemsFromQueueStmt())     
@@ -76,3 +88,4 @@ class WikiProcess:
         datas = DATA.get("query")
         page.loadContent(datas.get("pages"))
         S.close()         
+        

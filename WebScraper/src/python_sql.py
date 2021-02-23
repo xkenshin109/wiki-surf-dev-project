@@ -45,3 +45,12 @@ class sqlConnect:
         row = cursor.fetchval()
         conn.commit()
         return row
+    def execStoredProcedureRow(self,d):
+        conn = pyodbc.connect('Driver={SQL Server Native Client 11.0};Server=' + self.server + ';Database='+ self.database +';Trusted_Connection=yes;')
+        cursor = conn.cursor()
+        params = d.get("params")
+        sProc = d.get("storedProcedure")
+        cursor.execute(sProc,params)
+        row = cursor.fetchall()
+        conn.commit()
+        return row

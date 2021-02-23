@@ -1,0 +1,12 @@
+{
+  "host": "192.168.213.1",
+  "port": 9000,
+  "api": [
+    {
+      "name": "wikiapi",
+      "baseUrl" : "http://localhost:54303/api/",
+      "port" : 54303,
+      "cookieSecret": "cookiemonster"
+    }
+  ]
+}

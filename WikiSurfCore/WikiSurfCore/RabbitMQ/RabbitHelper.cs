@@ -16,8 +16,9 @@ namespace WikiSurfCore.RabbitMQ
 {
     public static class RabbitHelper
     {
-        public static void Send(WordBankQueue queueItem)
+        public static WordBankQueue Send(WordBankQueue queueItem, WikiSession aSession)
         {
+            WordBankQueue aQueueItem = null;
             bool processed = false;
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
@@ -40,6 +41,10 @@ namespace WikiSurfCore.RabbitMQ
                     var response = Encoding.UTF8.GetString(body);
                     if (ea.BasicProperties.CorrelationId == correlationId)
                     {
+                        using (StreamReader sr = new StreamReader(new MemoryStream(body)))
+                        {
+                            aQueueItem = JsonConvert.DeserializeObject<WordBankQueue>(sr.ReadToEnd());
+                        }
                         Console.WriteLine(response);
                         processed = true;
                     }
@@ -51,7 +56,8 @@ namespace WikiSurfCore.RabbitMQ
                     queueItem.CreatedDate,
                     queueItem.IsProcessed,
                     queueItem.ProcessedDate,
-                    queueItem.WordBank.Word
+                    queueItem.WordBank.Word,
+                    aSession.WikiSessionId
                 }));
 
                 channel.BasicPublish(exchange: "",
@@ -65,6 +71,8 @@ namespace WikiSurfCore.RabbitMQ
                     
                     var reply = channel.BasicConsume(replyQueue, true, consumer);
                 }
+
+                return aQueueItem;
             }
 
         }

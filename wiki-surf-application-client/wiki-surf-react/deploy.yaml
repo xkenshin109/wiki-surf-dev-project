@@ -1,0 +1,7 @@
+variables:
+  AzureSubscription: '<Azure service connection>'
+  ServerName: '<Database server name>'
+  DatabaseName: '<Database name>'
+  AdminUser: '<SQL user name>'
+  AdminPassword: '<SQL user password>'
+  SQLFile: '<Location of SQL file in $(Build.SourcesDirectory)>'
